@@ -1,5 +1,13 @@
-# Ti84+ Programs
-Programs for your Ti-84+ Calculator
+# Ti-84+ Programs & Games
+Programs (and maybe games) for your Ti-84+ Calculator
+
+##List of Programs
+Name | Category | What it Does
+------|--------|------
+8ball | Fun | An 8ball for your calculator! 
+bossbattle | Fun | A proof-of-concept where you can fight a "boss" and set its difficulty!
+guess-the-number | Fun | Self-explainitory, generates a number 1-10 and you, *ahem*, guess the number.
+set-FIX | Utilities | A lazy way to set the "Fix" of calculator. Don't know what Fix is? Oh.
 
 ##How to Install any of my programs
 
