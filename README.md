@@ -8,6 +8,7 @@ Name | Category | What it Does
 bossbattle | Fun | A proof-of-concept where you can fight a "boss" and set its difficulty!
 guess-the-number | Fun | Self-explainitory, generates a number 1-10 and you, *ahem*, guess the number.
 set-FIX | Utilities | A lazy way to set the "Fix" of calculator. Don't know what Fix is? Oh.
+dayofweek | Utilities | Using the `dayofwk(` function, it checks to see what day of the week a specified day is.
 
 ##How to Install any of my programs
 
