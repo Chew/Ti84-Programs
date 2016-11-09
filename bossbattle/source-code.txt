@@ -1,7 +1,8 @@
 100→B
 100→H
-Repeat C=0 or C=1
-Disp "SET BOSS DIFFICULTY"
+Disp "WELCOME
+Repeat C=0 or C=1 or C=2
+Disp "SET BOSS DIFFICULTY(0,1,2)
 Input C
 If C=0
 Then
@@ -11,19 +12,23 @@ If C=1
 Then
 5→E
 End
+If C=2
+Then
+10→E
+End
 End
 Repeat B≤0 or H≤0
 Disp "BOSS HEALTH:",B
 Disp "YOUR HEALTH:",H
-Disp "SELECT ATTACK"
+Disp "SELECT ACTION (1)
 Input A
 If A=1
 Then
 round(rand*10,0→D
 B-D→B
-End
 round(rand*E,0→D
 H-D→H
+End
 End
 If H≤0
 Then
@@ -32,3 +37,4 @@ Disp "HEALTH LEFT",B
 Else
 Disp "WIN
 Disp "HEALTH LEFT",H
+End
