@@ -1,0 +1,31 @@
+­1→A
+0→B
+0→C
+Repeat A≥0
+Disp "ENTER YEAR
+Input A
+End
+Repeat B≥1 and B≤12
+Disp "ENTER MONTH 
+Input B
+End
+Repeat C≥0 and C≤12
+Disp "ENTER DAY
+Input C
+End
+dayOfWk(A,B,C)→D
+If D=7
+"SATURDAY"→Str5
+If D=6
+"FRIDAY"→Str5
+If D=5
+"THURSDAY"→Str5
+If D=4
+"WEDNESDAY"→Str5
+If D=3
+"TUESDAY"→Str5
+If D=2
+"MONDAY"→Str5
+If D=1
+"SUNDAY"→Str4
+Disp "THAT IS A",Str5
