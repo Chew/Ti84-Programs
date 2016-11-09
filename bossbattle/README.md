@@ -2,6 +2,8 @@
 
 Current Version: b 0.1
 
+Download
+
 ##How to Play
 
 1) Run the Program `pgrmBOSSBATT`
