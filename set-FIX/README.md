@@ -1,6 +1,8 @@
 #Set Fix
 
-Current Version: b 0.1
+Current Version: 1.0
+
+[Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/blob/master/set-FIX/SETFIX.8xp?raw=true)
 
 ##How to Run
 
