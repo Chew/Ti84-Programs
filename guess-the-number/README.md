@@ -2,6 +2,8 @@
 
 Current Version: 1.0
 
+[Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/blob/master/guess-the-number/GUESSNUM.8xp?raw=true)
+
 ##How to Play
 
 1) Run the Program `pgrmGUESSNUM`
@@ -12,7 +14,7 @@ Current Version: 1.0
 
 Variable | Use
 -------|------
-A | Used to check store Number Input
+A | Used to check store Number Input.
 B | Used to store random number.
 
 ##Coming Soon:
