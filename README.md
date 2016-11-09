@@ -13,7 +13,7 @@ Programs for your Ti-84+ Calculator
 
 2) Make a new Program by clicking the plus button.
 
-3) Paste a program `(looks like *.8xp)` into the box. [Image Example](https://t.gyazo.com/teams/chew/bb4b0008abcc8ccedd606e31cb20e4f3.png)
+3) Paste a program `(says source-code.txt)` into the box. [Image Example](https://t.gyazo.com/teams/chew/bb4b0008abcc8ccedd606e31cb20e4f3.png)
 
 4) Set the VAR NAME to anything you like, preferably the program name (use the program name provided if you want).
 
