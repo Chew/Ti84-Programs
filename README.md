@@ -1,6 +1,8 @@
 # Ti-84+ Programs & Games
 Programs (and maybe games) for your Ti-84+ Calculator
 
+**NOTE: These were all made on a Ti-84+CE so they may not work as well on older models.
+
 ##List of Programs/Games
 Name | Category | What it Does
 ------|--------|------
