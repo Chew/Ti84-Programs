@@ -4,6 +4,8 @@ Current Version: b 1.0
 
 [Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/blob/master/bossbattle/BOSSBATT.8xp?raw=true)
 
+[Tutorial](http://help.chewcraft.me/article/15-program-bossbattle)
+
 ##How to Play
 
 1) Run the Program `pgrmBOSSBATT`
