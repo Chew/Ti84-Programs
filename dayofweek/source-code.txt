@@ -2,30 +2,61 @@
 0→B
 0→C
 Repeat A≥0
-Disp "ENTER YEAR
-Input A
+Input "YEAR > ",A
 End
+round(A/4,0)→J
+A/4→K
 Repeat B≥1 and B≤12
-Disp "ENTER MONTH 
-Input B
+Input "MONTH > ",B
 End
-Repeat C≥0 and C≤12
-Disp "ENTER DAY
-Input C
+If B=1 or B=3 or B=5 or B=7 or B=8 or B=10 or B=12
+Then
+Repeat C≥0 and C≤31
+Input "DAY > ",C
 End
+End
+If B=4 or B=6 or B=9 or B=1
+Then
+Repeat C≥0 and C≤30
+Input "DAY > ",C
+End
+End
+If B=2
+Then
+If J=K
+Then
+Repeat C≥1 and C≤29
+Input "DAY > ",C
+End
+Else
+Repeat C≥1 and C≤28
+Input "DAY > ",C
+End
+End
+End
+If C≠29
+Then
 dayOfWk(A,B,C)→D
+Else
+28→C
+dayOfWk(A,B,C)→D
+D+1→D
+If D=8
+Then
+1→D
+End
+End
 If D=7
-"SATURDAY"→Str5
+Disp "THAT IS A SATURDAY
 If D=6
-"FRIDAY"→Str5
+Disp "THAT IS A FRIDAY
 If D=5
-"THURSDAY"→Str5
+Disp "THAT IS A THURSDAY
 If D=4
-"WEDNESDAY"→Str5
+Disp "THAT IS A WEDNESDAY
 If D=3
-"TUESDAY"→Str5
+Disp "THAT IS A TUESDAY
 If D=2
-"MONDAY"→Str5
+Disp "THAT IS A MONDAY
 If D=1
-"SUNDAY"→Str4
-Disp "THAT IS A",Str5
+Disp "THAT IS A SUNDAY
