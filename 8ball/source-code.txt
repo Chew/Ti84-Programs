@@ -1,17 +1,17 @@
 Disp "MAGIC 8BALL
 Disp "ASK YOUR QUESTION
-Disp "THEN ENTER 1
-Input A
-round(rand*10,0)→B
-If B≤3 and B≥1
+Disp "THEN PRESS ENTER
+Pause 
+round(rand*3,0)→B
+If B=1
 Then
 Disp "YES
 End
-If B≤6 and B≥4
+If B=2
 Then
 Disp "NO
 End
-If B≤9 and B≥7
+If B=3
 Then
 Disp "MAYBE
 End
@@ -19,7 +19,7 @@ If B=0
 Then
 Disp "ASK LATER
 End
-If B=10
+If B=4
 Then
 Disp "IDK
 End
