@@ -1,0 +1,191 @@
+0→M
+ClrHome
+Disp "WELCOME TO: LUCKY CUBES"
+Disp "N>NEW GAME
+Disp "L>LOAD GAME
+Disp "C>CONVERT SAVE TO NEW VER.
+Input Str4
+If Str4="C"
+Then
+0→⌊LCGM(3)
+startTmr→⌊LCGM(4)
+End
+If Str4="N"
+Then
+5→⌊LCGM(1)
+100→⌊LCGM(2)
+0→⌊LCGM(3)
+startTmr→⌊LCGM(4)
+End
+ClrHome
+Disp "WELCOME BACK
+Repeat 5≠5
+If M=0
+Then
+Repeat M≠0
+Disp "ENTER OPTION
+Disp "O>OPEN CUBE
+Disp "B>BUY A CUBE
+Disp "I>ITEMS
+Disp "M>MERCENARIES
+Disp "Q>QUIT
+Input ">",Str4
+If Str4="Q"
+Then
+Disp "SEE YOU LATER
+Stop
+End
+If Str4="O"
+2→M
+If Str4="B"
+3→M
+If Str4="M"
+Then
+ClrHome
+1→M
+End
+If Str4="I"
+5→M
+If M=3
+Then
+Repeat M≠3
+If ⌊LCGM(2)≥100
+Then
+ClrHome
+Disp "BUY 1 CUBE FOR 100 COINS?"
+Disp "Y>YES
+Disp "N>NO
+Input ">",Str5
+If Str5="Y"
+Then
+ClrHome
+⌊LCGM(2)-100→⌊LCGM(2)
+⌊LCGM(1)+1→⌊LCGM(1)
+Disp "PURCHASE SUCCESSFUL
+0→M
+End
+If Str5="N"
+Then
+ClrHome
+Disp "PURCHASE CANCELED
+0→M
+End
+Else
+ClrHome
+Disp "INSUFFICIENT FUNDS
+0→M
+End
+End
+End
+If M=5
+Then
+Repeat M≠5
+ClrHome
+Disp "COINS:",⌊LCGM(2)
+Disp "CUBES:",⌊LCGM(1)
+Disp "PRESS ENTER TO CONT.
+Pause 
+0→M
+ClrHome
+End
+End
+If M=1
+Then
+Repeat M≠1
+Disp "MERCENARY MENU
+Disp "SELECT OPTION
+Disp "P>PURCHASE
+Disp "C>COLLECT COINS
+Disp "I>INFORMATION
+Disp "B>BACK
+Input ">",Str5
+If Str5="C"
+Then
+startTmr-⌊LCGM(4)→N
+N/300→N
+N-.5→N
+round(N,0)→N
+N*⌊LCGM(3)→N
+ClrHome
+Disp "COINS COLLECTED:",N
+Disp "PRESS ENTER TO CONT."
+N+⌊LCGM(2)→⌊LCGM(2)
+startTmr→⌊LCGM(4)
+Pause 
+ClrHome
+End
+If Str5="P"
+Then
+⌊LCGM(3)*20→J
+ClrHome
+If J>⌊LCGM(2)
+Then
+ClrHome
+Disp "INSUFFICIENT FUNDS
+Else
+Disp "COST TO BUY:",J
+Disp "BUY 1 MERCENARY?
+Disp "Y>YES
+Disp "N>NO
+Input ">",Str6
+If Str6="Y"
+Then
+⌊LCGM(2)-J→⌊LCGM(2)
+⌊LCGM(3)+1→⌊LCGM(3)
+ClrHome
+Disp "PURCHASE SUCCESSFUL
+If ⌊LCGM(3)=1
+Then
+startTmr→⌊LCGM(4)
+End
+Else
+ClrHome
+Disp "PURCHASE CANCELLED
+End
+End
+End
+If Str5="B"
+Then
+ClrHome
+0→M
+End
+If Str5="I"
+Then
+ClrHome
+Disp "MERCENARIES HELP FIND","COINS, THEY FIND ONE","EVERY 5 MINUTES"
+Disp "","PRESS ENTER TO CONT."
+Pause 
+ClrHome
+End
+End
+End
+If M=2
+Then
+Repeat M≠2
+If ⌊LCGM(1)>0
+Then
+ClrHome
+Disp "PRESS ENTER TO OPEN
+Pause 
+⌊LCGM(1)-1→⌊LCGM(1)
+Disp "OPENING CUBE...
+Wait 2
+round(rand*50,0)→T
+T+⌊LCGM(2)→⌊LCGM(2)
+Disp "COINS FOUND:",T
+Disp "PRESS ENTER TO CONT.
+Pause 
+ClrHome
+0→M
+Else
+ClrHome
+Disp "NO CUBES!"
+0→M
+End
+End
+End
+End
+End
+End
+Disp "THIS MESSAGE SHOULD","NOT APPEAR"
+Stop
