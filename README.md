@@ -9,6 +9,7 @@ Name | Category | What it Does
 [8ball](https://github.com/Chewsterchew/Ti84-Programs/tree/master/8ball) | Fun | An 8ball for your calculator! 
 [bossbattle](https://github.com/Chewsterchew/Ti84-Programs/tree/master/bossbattle) | Fun | A proof-of-concept where you can fight a "boss" and set its difficulty!
 [guess-the-number](https://github.com/Chewsterchew/Ti84-Programs/tree/master/guess-the-number) | Fun | Self-explainitory, generates a number 1-10 and you, *ahem*, guess the number.
+[Lucky Cubes](https://github.com/Chewsterchew/Ti84-Programs/tree/master/lucky-cubes) | Fun | *Proof of Concept* A fun game where you open cubes and can collect coins from mercenaries.
 [set-FIX](https://github.com/Chewsterchew/Ti84-Programs/tree/master/set-FIX) | Utilities | A lazy way to set the "Fix" of calculator. Don't know what Fix is? Oh.
 [dayofweek](https://github.com/Chewsterchew/Ti84-Programs/tree/master/dayofweek) | Utilities | Using the `dayofwk(` function, it checks to see what day of the week a specified day is.
 
