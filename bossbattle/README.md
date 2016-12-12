@@ -1,6 +1,6 @@
 #Boss Battle
 
-Current Version: b 1.0
+Current Version: b 1.1
 
 [Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/blob/master/bossbattle/BOSSBATT.8xp?raw=true)
 
@@ -10,9 +10,9 @@ Current Version: b 1.0
 
 1) Run the Program `pgrmBOSSBATT`
 
-2) Select difficulty (Only 0 or 1 or 2 will work)
+2) Select difficulty (Enter 1, 2, or 3)
 
-3) Use 1 to Attack (not putting a 1 will skip your turn)
+3) Press enter to attack.
 
 4) Repeat Step 3 until you win or lose.
 
@@ -20,7 +20,6 @@ Current Version: b 1.0
 
 Variable | Use
 -------|------
-A | Used to check "SELECT ATTACK" Response
 B | Used to store Boss Health
 C | Used to select difficulty
 D | Used to calculate damage
@@ -30,13 +29,12 @@ H | Used to store player Health
 ##Updates
 Version | Short Description
 --------|----------
+b 1.1 | Rewrote some minor things, new difficulty.
 b 1.0 | New Difficulty
 b 0.1 | Initial Release
 
 ##Coming Soon:
 
 XP/Coin Rewards
-
-More Difficulties
 
 Better weapons/etc
