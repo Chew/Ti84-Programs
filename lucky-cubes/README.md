@@ -8,7 +8,7 @@ Current Version: 1.0
 
 **Use Alpha-Letter for reponses with letters**
 
-1) Run the Program `pgrmBOSSBATT`
+1) Run the Program `pgrmLUCKCUBE`
 
 2) Select New Game or Load Game, only select "C" if you are downloading a new version.
 
