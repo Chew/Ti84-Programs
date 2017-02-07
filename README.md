@@ -11,7 +11,19 @@ Slowly I will try to move all the program info there, too, as well as the instal
 
 ####Both of these methods requires your calculator's Ti-Connect software, refer to your booklet to see which is needed. I will be using the guide and images for the Ti-Connect CE, yours may be different
 
-#####Download links to programs **COMING SOON** please use the method below.
+###Downloading Method
+
+1) Download the program.
+
+2) Plug in your calculator and open the program and go to the Calculator Explorer Tab
+
+3) Click the button with an arrow coming out of the computer.
+
+![button](https://t.gyazo.com/teams/chew/47d53a29cf98e5d77fcacb162654f7bb.png)
+
+4) Select the program downloaded.
+
+5) Change options if neccessary but they should be fine so just press send.
 
 ###Copy & Pasting Method
 
