@@ -3,13 +3,7 @@ ClrHome
 Disp "WELCOME TO: LUCKY CUBES"
 Disp "N>NEW GAME
 Disp "L>LOAD GAME
-Disp "C>CONVERT SAVE TO NEW VER.
-Input Str4
-If Str4="C"
-Then
-0→⌊LCGM(3)
-startTmr→⌊LCGM(4)
-End
+Input ">",Str4
 If Str4="N"
 Then
 5→⌊LCGM(1)
@@ -24,21 +18,25 @@ If M=0
 Then
 Repeat M≠0
 Disp "ENTER OPTION
-Disp "O>OPEN CUBE
-Disp "B>BUY A CUBE
+Disp "O>OPEN CUBES
+Disp "B>BUY CUBES
 Disp "I>ITEMS
 Disp "M>MERCENARIES
+Disp "S>SETTINGS
 Disp "Q>QUIT
 Input ">",Str4
 If Str4="Q"
 Then
-Disp "SEE YOU LATER
+ClrHome
+Disp "SEE YOU LATER!
 Stop
 End
 If Str4="O"
 2→M
 If Str4="B"
 3→M
+If Str4="S"
+6→M
 If Str4="M"
 Then
 ClrHome
@@ -46,33 +44,114 @@ ClrHome
 End
 If Str4="I"
 5→M
+If M=6
+Then
+ClrHome
+While M=6
+Disp "SETTINGS
+Disp "I>GAME INFO
+Disp "R>RESET
+Disp "B>BACK
+Input ">",Str5
+If Str5="I"
+Then
+ClrHome
+Disp "LUCKY CUBES
+Disp "MADE BY: CHEWSTERCHEW
+Disp "VERSION: 1.1
+Disp "","","","","PRESS ENTER TO CONT."
+Pause 
+ClrHome
+End
+If Str5="B"
+Then
+ClrHome
+0→M
+End
+If Str5="R"
+Then
+ClrHome
+Disp "RESET MENU
+Disp "NOTE: RESETS TO 0
+Disp ""
+Disp "M>RESET MERCENARIES
+Disp "O>RESET COINS
+Disp "C>RESET CUBES
+Disp "T>RESET MERC TIMER
+Input ">",Str6
+If Str6="T"
+Then
+ClrHome
+startTmr→⌊LCGM(4)
+Disp "MERC TIMER RESET
+End
+If Str6="M"
+Then
+ClrHome
+0→⌊LCGM(3)
+Disp "MERCENARIES CLEARED
+End
+If Str6="O"
+Then
+ClrHome
+0→⌊LCGM(2)
+Disp "COINS CLEARED
+End
+If Str6="C"
+Then
+ClrHome
+0→⌊LCGM(1)
+Disp "CUBES CLEARED
+End
+End
+End
+End
 If M=3
 Then
-Repeat M≠3
-If ⌊LCGM(2)≥100
-Then
 ClrHome
-Disp "BUY 1 CUBE FOR 100 COINS?"
+1→A
+100→B
+Disp "COINS:",⌊LCGM(2)
+Disp "BUY 1 CUBE FOR 100 COINS?
+Repeat M≠3
 Disp "Y>YES
 Disp "N>NO
+Disp "S>SELECT AMOUNT TO BUY
 Input ">",Str5
-If Str5="Y"
+If Str5="S"
 Then
 ClrHome
-⌊LCGM(2)-100→⌊LCGM(2)
-⌊LCGM(1)+1→⌊LCGM(1)
+Repeat round(A,0)=A and A≥1
+Disp "SELECT AMOUNT
+Input ">",A
+If round(A,0)≠A
+Disp "CANNOT BE A DECIMAL
+If A<1
+Disp "MUST BE 1 OR MORE
+End
+A*100→B
+ClrHome
+Disp "COST TO BUY:",B
+End
+If Str5="Y"
+Then
+If ⌊LCGM(2)≥B
+Then
+ClrHome
+⌊LCGM(2)-B→⌊LCGM(2)
+⌊LCGM(1)+A→⌊LCGM(1)
 Disp "PURCHASE SUCCESSFUL
 0→M
+Else
+ClrHome
+Disp "INSUFFICIENT FUNDS
+0→M
+End
 End
 If Str5="N"
 Then
 ClrHome
-Disp "PURCHASE CANCELED
-0→M
-End
-Else
-ClrHome
-Disp "INSUFFICIENT FUNDS
+Disp "PURCHASE CANCELLED
 0→M
 End
 End
@@ -83,6 +162,7 @@ Repeat M≠5
 ClrHome
 Disp "COINS:",⌊LCGM(2)
 Disp "CUBES:",⌊LCGM(1)
+Disp "MERCENARIES:",⌊LCGM(3)
 Disp "PRESS ENTER TO CONT.
 Pause 
 0→M
@@ -161,28 +241,61 @@ End
 End
 If M=2
 Then
-Repeat M≠2
-If ⌊LCGM(1)>0
+ClrHome
+If ⌊LCGM(1)=0
 Then
-ClrHome
-Disp "PRESS ENTER TO OPEN
-Pause 
-⌊LCGM(1)-1→⌊LCGM(1)
-Disp "OPENING CUBE...
-Wait 2
-round(rand*50,0)→T
-T+⌊LCGM(2)→⌊LCGM(2)
-Disp "COINS FOUND:",T
-Disp "PRESS ENTER TO CONT.
-Pause 
-ClrHome
+Disp "YOU HAVE NO CUBES
 0→M
 Else
+Repeat M≠2
+Disp "CUBES:",⌊LCGM(1)
+0→L
+Repeat L=1
+Disp "ENTER CUBES TO OPEN
+Input ">",O
+0→E
+If O>100
+Then
+1→E
 ClrHome
-Disp "NO CUBES!"
+Disp "NUMBER TOO HIGH
+End
+If O>⌊LCGM(1)
+Then
+1→E
+ClrHome
+Disp "INSUFFICIENT CUBES
+End
+If O=0
+Then
 0→M
+ClrHome
+Disp "CANCELLING
 End
+If O<0
+Then
+1→E
+ClrHome
+Disp "NUMBER TOO LOW
 End
+If E=0
+1→L
+End
+Disp "PRESS ENTER TO OPEN
+Pause 
+Disp "OPENING...
+0→P
+0→U
+Repeat O=P
+round(rand*50,0)→T
+T+U→U
+P+1→P
+End
+⌊LCGM(1)-O→⌊LCGM(1)
+⌊LCGM(2)+U→⌊LCGM(2)
+ClrHome
+Disp "COINS FOUND:",U
+0→M
 End
 End
 End
