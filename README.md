@@ -3,7 +3,7 @@ Programs (and maybe games) for your Ti-84+ Calculator
 
 **NOTE: These were all made on a Ti-84+CE so they may not work as well on older models.**
 
-You can now view the Ti-84 Programs on the beautiful new website! Check the website by clicking [here](http://ti84.chewcraft.me).
+You can now view the Ti-84 Programs on the beautiful new website! Check the website by clicking [here](http://ti84.chew.pw).
 
 Slowly I will try to move all the program info there, too, as well as the install guide.
 
