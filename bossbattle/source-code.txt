@@ -1,40 +1,56 @@
 100→B
 100→H
+0→D
 ClrHome
-Disp "WELCOME
-Repeat C=0 or C=1 or C=2 or C=3
-Disp "SET BOSS DIFFICULTY
-Disp "1>EASY
-Disp "2>NORMAL
-Disp "3>HARD
-Input C
-If C=0
-1→E
-If C=1
-5→E
-If C=2
-10→E
-If C=3
-15→E
-End
-Repeat B≤0 or H≤0
-ClrHome
-Disp "BOSS HEALTH:",B
-Disp "YOUR HEALTH:",H
-Disp "PRESS ENTER TO ATTACK
+Output(2,1,"        BOSS BATTLE
+Output(9,1,"   Press Enter to Begin"
 Pause 
-round(rand*10,0)→D
-B-D→B
-round(rand*E,0)→D
-H-D→H
+Menu("    SET BOSS DIFFICULTY    ","EASY",A,"NORMAL",B,"HARD",C
+Lbl A
+D+1→D
+Lbl B
+D+10→D
+Lbl C
+D+100→D
+If D=111
+1→E
+If D=110
+5→E
+If D=100
+10→E
+ClrHome
+Output(1,1,"BOSS HEALTH:"
+Output(2,1,"YOUR HEALTH:"
+Repeat H≤0 or B≤0
+Output(1,24,"   "
+Output(2,24,"   "
+If H≥1
+26→O
+If H≥10
+25→O
+If H≥100
+24→O
+Output(2,O,H
+If B≥1
+26→P
+If B≥10
+25→P
+If B≥100
+24→P
+Output(1,P,B
+Pause 
+H-randInt(0,E)→H
+B-randInt(0,10)→B
 End
+ClrHome
+Disp "",""
 If H≤0
 Then
-ClrHome
-Disp "YOU LOST
-Disp "HEALTH LEFT",B
+Output(1,1,"YOU LOST! :("
+Output(2,1,"BOSS HEALTH LEFT:"
+Output(2,P,B
 Else
-ClrHome
-Disp "YOU WIN
-Disp "HEALTH LEFT",H
+Output(1,1,"YOU WON! :D"
+Output(2,1,"HEALTH LEFT:"
+Output(2,O,H
 End
