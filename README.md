@@ -7,11 +7,11 @@ You can now view the Ti-84 Programs on the beautiful new website! Check the webs
 
 Slowly I will try to move all the program info there, too, as well as the install guide.
 
-##How to Install any of my programs
+## How to Install any of my programs
 
-####Both of these methods requires your calculator's Ti-Connect software, refer to your booklet to see which is needed. I will be using the guide and images for the Ti-Connect CE, yours may be different
+#### Both of these methods requires your calculator's Ti-Connect software, refer to your booklet to see which is needed. I will be using the guide and images for the Ti-Connect CE, yours may be different
 
-###Downloading Method
+### Downloading Method
 
 1) Download the program.
 
@@ -25,7 +25,7 @@ Slowly I will try to move all the program info there, too, as well as the instal
 
 5) Change options if neccessary but they should be fine so just press send.
 
-###Copy & Pasting Method
+### Copy & Pasting Method
 
 1) Open the program and go to the Program Editior Tab. [Image Example](https://t.gyazo.com/teams/chew/0da2864f17bbe826fc47502012a6f101.png)
 
