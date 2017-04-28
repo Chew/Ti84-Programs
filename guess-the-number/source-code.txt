@@ -1,9 +1,120 @@
-round(rand*10,0)→B
-Disp "GUESS THE NUMBER
-Input A
-If A=B
-Then
-Disp "YOU WON
-Else
-Disp "TRY AGAIN
+10→A
+ClrHome
+Output(1,4,"GUESS THE NUMBER
+Output(2,1,"PICK A NUM 0-9
+Output(3,1,"THEN PRESS ENTER"
+Output(4,1,"USE ARROW KEYS TO CHOOSE
+Output(5,1,"THEN PRESS ENTER"
+7→D
+Output(7,2,"Begin
+Output(8,2,"Quit
+Goto T
+Lbl T
+Output(D,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
 End
+If K=25 or K=34
+Then
+If D=7
+Then
+8→D
+Output(7,1," "
+Else
+7→D
+Output(8,1," "
+End
+Goto T
+Else
+If D=7
+Goto C
+If D=8
+Goto Q
+End
+Lbl C
+10→A
+ClrHome
+Output(1,6,"GUESS THE NUMBER
+Output(3,8,"YOUR NUMBER
+Output(4,13,"?"
+Output(6,7,"ACTUAL NUMBER
+Output(7,13,"?"
+Lbl A
+Repeat K=72 or K=73 or K=74 or K=82 or K=83 or K=84 or K=92 or K=93 or K=94 or K=102 or K=105
+getKey→K
+End
+If K=102
+0→A
+If K=92
+1→A
+If K=93
+2→A
+If K=94
+3→A
+If K=82
+4→A
+If K=83
+5→A
+If K=84
+6→A
+If K=72
+7→A
+If K=73
+8→A
+If K=74
+9→A
+If A≠10
+Output(4,13,A
+If K=105
+Then
+If A=10
+Then
+Goto A
+Else
+Goto B
+End
+Else
+Goto A
+End
+Lbl B
+randInt(0,9)→B
+Output(7,13,B)
+Output(1,1,"                         "
+If B=A
+Output(1,1,"YOU GUESSED IT"
+If B≠A
+Output(1,1,"YOU GUESSED WRONG :("
+
+9→D
+Output(9,2,"Again
+Output(10,2,"Quit
+Output(D,1,">"
+Lbl U
+Output(D,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
+End
+If K=25 or K=34
+Then
+If D=9
+Then
+10→D
+Output(9,1," "
+Else
+9→D
+Output(10,1," "
+End
+Goto U
+End
+If K=105 and D=9
+Goto C
+Output(9,1,"      "
+Output(10,1,"PRESS ANY KEY TO FINISH"
+0→K
+Repeat K≠0
+getKey→K
+End
+Goto Q
+Lbl Q
+ClrHome
+Stop
