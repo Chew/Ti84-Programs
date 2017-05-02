@@ -1,4 +1,14 @@
-##Release 1.1
+## Release 2.0
+
+- New `Menu(` function for selecting items. No more ALPHA - Key needed!
+- Lucky Cubes are now possible! Can be between 20-150 coins.
+- New Game confirmination.
+- "Press Enter to Continue" revamp, instead of pressing enter, you can now press any key! (Except ON)
+- Lowercase letters are here! NO MORE SHOUTING!
+- New purchase confirmination menu. Custom menu! Use arrow keys to select.
+
+
+## Release 1.1
 
 Quite a few things:
 - Opening cubes completely rewritten.
@@ -12,6 +22,6 @@ Quite a few things:
 
 ---
 
-##Release 1.0
+## Release 1.0
 
 Initial Release

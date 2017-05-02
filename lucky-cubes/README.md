@@ -1,6 +1,6 @@
 # Lucky Cubes
 
-Current Version: 1.1
+Current Version: 2.0
 
 [Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/raw/master/lucky-cubes/LUCKCUBE.8xp)
 
@@ -12,25 +12,23 @@ Current Version: 1.1
 
 2) Select New Game or Load Game.
 
-3) Press "O" to open a cube. 
-
-More Detailed Tutorial later.
+3) Navigate using menus.
 
 ## Variables that will be Used
 
 Variable | Use
 -------|------
+A | Used to store something.
+B | Used to store something.
 E | Used to store error codes.
 J | Used to check data.
-M | Used to see what menu the player is viewing.
+K | Used to store keystroke data.
+L | Used to see if you got a lucky cube.
 N | Used to see coins collected.
-O | Used to store a number.
 P | Used to store something.
+S | Used to store something.
 T | Used to see coins found.
 U | Used to store coins found.
-Str4 | Used to store input
-Str5 | Used to store input
-Str6 | Used to store input
 List LCGM (created on first startup) | Used to store all items.
 
 ## Updates

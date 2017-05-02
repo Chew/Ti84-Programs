@@ -1,126 +1,125 @@
-0→M
+﻿ClrHome
+Output(2,9,"Welcome to:"
+Output(3,9,"LUCKY CUBES
+Output(9,5,"Press Enter to Play"
+Repeat K≠0
+getKey→K
+End
 ClrHome
-Disp "WELCOME TO: LUCKY CUBES"
-Disp "N>NEW GAME
-Disp "L>LOAD GAME
-Input ">",Str4
-If Str4="N"
-Then
+Menu("        START MENU        ","New Game",B,"Load Game",A,"Quit",C
+Lbl B
+Menu("CONFIRM NEW GAME?","No",A,"Yes",NG
+Lbl NG
 5→⌊LCGM(1)
 100→⌊LCGM(2)
 0→⌊LCGM(3)
 startTmr→⌊LCGM(4)
+Goto A
+Lbl A
+Menu("         MAIN MENU        ","Open Cube",D,"Buy Cubes",E,"View Items",F,"Mercenary Menu",G,"Settings",H,"Quit",C
+Lbl H
+ClrHome
+Menu("         SETTINGS          ","Game Info",J,"Reset",K,"Back",A
+Lbl J
+ClrHome
+Output(1,1,"LUCKY CUBES
+Output(2,1,"Made by: Chewsterchew
+Output(3,1,"http://ti84.chew.pw
+Output(4,1,"Version: 2.0
+Output(10,1,"Press Any Key to Continue
+Repeat K≠0
+getKey→K
 End
 ClrHome
-Disp "WELCOME BACK
-Repeat 5≠5
-If M=0
-Then
-Repeat M≠0
-Disp "ENTER OPTION
-Disp "O>OPEN CUBES
-Disp "B>BUY CUBES
-Disp "I>ITEMS
-Disp "M>MERCENARIES
-Disp "S>SETTINGS
-Disp "Q>QUIT
-Input ">",Str4
-If Str4="Q"
-Then
+Goto H
+Lbl K
 ClrHome
-Disp "SEE YOU LATER!
-Stop
-End
-If Str4="O"
-2→M
-If Str4="B"
-3→M
-If Str4="S"
-6→M
-If Str4="M"
-Then
-ClrHome
-1→M
-End
-If Str4="I"
-5→M
-If M=6
-Then
-ClrHome
-While M=6
-Disp "SETTINGS
-Disp "I>GAME INFO
-Disp "R>RESET
-Disp "B>BACK
-Input ">",Str5
-If Str5="I"
-Then
-ClrHome
-Disp "LUCKY CUBES
-Disp "MADE BY: CHEWSTERCHEW
-Disp "VERSION: 1.1
-Disp "","","","","PRESS ENTER TO CONT."
-Pause 
-ClrHome
-End
-If Str5="B"
-Then
-ClrHome
-0→M
-End
-If Str5="R"
-Then
-ClrHome
-Disp "RESET MENU
-Disp "NOTE: RESETS TO 0
-Disp ""
-Disp "M>RESET MERCENARIES
-Disp "O>RESET COINS
-Disp "C>RESET CUBES
-Disp "T>RESET MERC TIMER
-Input ">",Str6
-If Str6="T"
-Then
+Menu("        RESET MENU       ","Clear All Mercenaries",R1,"Clear Coins",R2,"Clear Cubes",R3,"Reset Merc Timer",R4,"Back",H
+Lbl R4
 ClrHome
 startTmr→⌊LCGM(4)
 Disp "MERC TIMER RESET
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-If Str6="M"
+Goto K
+Lbl R1
 Then
 ClrHome
 0→⌊LCGM(3)
 Disp "MERCENARIES CLEARED
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-If Str6="O"
-Then
+Goto K
+Lbl R2
 ClrHome
 0→⌊LCGM(2)
 Disp "COINS CLEARED
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-If Str6="C"
-Then
+Goto K
+Lbl R3
 ClrHome
 0→⌊LCGM(1)
 Disp "CUBES CLEARED
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-End
-End
-End
-If M=3
-Then
+Goto K
+Lbl E
 ClrHome
 1→A
 100→B
-Disp "COINS:",⌊LCGM(2)
+Disp ""
+Output(1,1,"COINS:
+Output(1,8,⌊LCGM(2)
 Disp "BUY 1 CUBE FOR 100 COINS?
-Repeat M≠3
-Disp "Y>YES
-Disp "N>NO
-Disp "S>SELECT AMOUNT TO BUY
-Input ">",Str5
-If Str5="S"
+Lbl CC
+7→P
+Output(7,2,"Yes
+Output(8,2,"No
+Output(9,2,"Select Amnt to Buy
+Output(10,2,"Back
+Output(P,1,">"
+Lbl PC
+Output(P,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
+End
+If K=25
+Then
+P-1→P
+If P=6
+10→P
+If P=10
+Output(7,1," "
+If P≠10
+Output(P+1,1," "
+Goto PC
+End
+If K=34
+Then
+P+1→P
+If P=11
+7→P
+If P=7
+Output(10,1," "
+If P≠7
+Output(P-1,1," "
+Goto PC
+End
+If P=10
+Goto A
+If P=9
 Then
 ClrHome
+0.5→A
 Repeat round(A,0)=A and A≥1
 Disp "SELECT AMOUNT
 Input ">",A
@@ -132,8 +131,9 @@ End
 A*100→B
 ClrHome
 Disp "COST TO BUY:",B
+Goto CC
 End
-If Str5="Y"
+If P=7
 Then
 If ⌊LCGM(2)≥B
 Then
@@ -141,46 +141,46 @@ ClrHome
 ⌊LCGM(2)-B→⌊LCGM(2)
 ⌊LCGM(1)+A→⌊LCGM(1)
 Disp "PURCHASE SUCCESSFUL
-0→M
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
+Goto A
 Else
 ClrHome
 Disp "INSUFFICIENT FUNDS
-0→M
+Goto A
 End
 End
-If Str5="N"
+If P=8
 Then
 ClrHome
 Disp "PURCHASE CANCELLED
-0→M
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
+Goto A
 End
 End
-End
-If M=5
-Then
-Repeat M≠5
+Goto A
+Lbl F
 ClrHome
-Disp "COINS:",⌊LCGM(2)
-Disp "CUBES:",⌊LCGM(1)
-Disp "MERCENARIES:",⌊LCGM(3)
-Disp "PRESS ENTER TO CONT.
-Pause 
-0→M
+Output(1,1,"Coins:"
+Output(1,8,⌊LCGM(2)
+Output(2,1,"Cubes:"
+Output(2,8,⌊LCGM(1)
+Output(3,1,"Mercenaries:
+Output(3,14,⌊LCGM(3)
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
 ClrHome
-End
-End
-If M=1
-Then
-Repeat M≠1
-Disp "MERCENARY MENU
-Disp "SELECT OPTION
-Disp "P>PURCHASE
-Disp "C>COLLECT COINS
-Disp "I>INFORMATION
-Disp "B>BACK
-Input ">",Str5
-If Str5="C"
-Then
+Goto A
+Lbl G
+Menu("      MERCENARY MENU       ","Purchase",M1,"Collect Coins",M2,"Information",M3,"Back",A
+Lbl M2
 startTmr-⌊LCGM(4)→N
 N/300→N
 N-.5→N
@@ -188,64 +188,89 @@ round(N,0)→N
 N*⌊LCGM(3)→N
 ClrHome
 Disp "COINS COLLECTED:",N
-Disp "PRESS ENTER TO CONT."
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
 N+⌊LCGM(2)→⌊LCGM(2)
 startTmr→⌊LCGM(4)
-Pause 
 ClrHome
-End
-If Str5="P"
-Then
-⌊LCGM(3)*20→J
+Goto G
+Lbl M1
+⌊LCGM(3)→S
+round(0.5(S^2)+20S,0)→J
 ClrHome
 If J>⌊LCGM(2)
 Then
 ClrHome
-Disp "INSUFFICIENT FUNDS
+Disp "InSufficient Funds
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
 Else
 Disp "COST TO BUY:",J
-Disp "BUY 1 MERCENARY?
-Disp "Y>YES
-Disp "N>NO
-Input ">",Str6
-If Str6="Y"
+7→P
+Output(7,2,"Purchase
+Output(8,2,"Cancel
+Output(P,1,">"
+Lbl PM
+Output(P,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
+End
+If K=25 or K=34
+Then
+If P=7
+Then
+8→P
+Output(7,1," "
+Else
+7→P
+Output(8,1," "
+End
+Goto PM
+End
+If P=7
 Then
 ⌊LCGM(2)-J→⌊LCGM(2)
 ⌊LCGM(3)+1→⌊LCGM(3)
 ClrHome
 Disp "PURCHASE SUCCESSFUL
 If ⌊LCGM(3)=1
-Then
 startTmr→⌊LCGM(4)
-End
 Else
 ClrHome
 Disp "PURCHASE CANCELLED
 End
 End
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-If Str5="B"
-Then
+Goto G
+Lbl M3
 ClrHome
-0→M
+Output(1,1,"Mercenary Help
+Output(2,1,"Mercenaries find Coins.
+Output(3,1,"They find one every
+Output(4,1,"5 minutes"
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
-If Str5="I"
-Then
 ClrHome
-Disp "MERCENARIES HELP FIND","COINS, THEY FIND ONE","EVERY 5 MINUTES"
-Disp "","PRESS ENTER TO CONT."
-Pause 
-ClrHome
-End
-End
-End
-If M=2
-Then
+Goto G
+Lbl D
 ClrHome
 If ⌊LCGM(1)=0
 Then
 Disp "YOU HAVE NO CUBES
-0→M
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
+Goto A
 Else
 Repeat M≠2
 Disp "CUBES:",⌊LCGM(1)
@@ -268,7 +293,7 @@ Disp "INSUFFICIENT CUBES
 End
 If O=0
 Then
-0→M
+Goto A
 ClrHome
 Disp "CANCELLING
 End
@@ -281,24 +306,39 @@ End
 If E=0
 1→L
 End
+ClrHome
 Disp "PRESS ENTER TO OPEN
 Pause 
 Disp "OPENING...
 0→P
+0→L
 0→U
 Repeat O=P
-round(rand*50,0)→T
+If randInt(1,10)=randInt(1,15)
+Then
+randInt(20,150)→T
+1→L
+Else
+randInt(1,50)→T
+End
 T+U→U
 P+1→P
 End
 ⌊LCGM(1)-O→⌊LCGM(1)
 ⌊LCGM(2)+U→⌊LCGM(2)
 ClrHome
+If L=1
+Disp "CONGRATULATIONS","YOU GOT A LUCKY CUBE
 Disp "COINS FOUND:",U
-0→M
+0→L
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
 End
 End
-End
-End
+Goto A
 Disp "THIS MESSAGE SHOULD","NOT APPEAR"
+Lbl C
+ClrHome
+Disp "SEE YOU NEXT TIME
 Stop
