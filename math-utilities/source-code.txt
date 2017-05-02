@@ -1,0 +1,37 @@
+Menu("SELECT PROGRAM","Find Slope",A,"Distance",B,"Find Midpoint",C,"Quit",Q
+
+Lbl A
+Input "X1 > ",A
+Input "Y1 > ",B
+Input "X2 > ",D
+Input "Y2 > ",E
+(E-B)/(D-A)?C
+Disp "SLOPE IS:",C
+Goto Q
+
+Lbl B
+Input "X1 > ",A
+Input "Y1 > ",B
+Input "X2 > ",C
+Input "Y2 > ",D
+(C-A)²+(D-B)²?E
+v(E)?G
+round(G,0)?F
+If G=F
+Disp G
+If G?F
+Disp "","v(",E
+Goto Q
+
+Lbl C
+Input "X1 > ",A
+Input "Y1 > ",D
+Input "X2 > ",B
+Input "Y2 > ",E
+(A+B)/2??MDPT(1)
+(D+E)/2??MDPT(2)
+Disp "MIDPOINT:",?MDPT
+Goto Q
+
+Lbl Q
+Stop
