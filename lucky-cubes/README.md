@@ -6,8 +6,6 @@ Current Version: 2.0
 
 ## How to Play
 
-**Use Alpha-Letter for reponses with letters**
-
 1) Run the Program `pgrmLUCKCUBE`
 
 2) Select New Game or Load Game.
@@ -34,9 +32,10 @@ List LCGM (created on first startup) | Used to store all items.
 ## Updates
 Version | Short Description
 --------|----------
+2.0 | Revamped everything, same program, new look.
 1.1 | Rewrote opening cubes, can now select things. Full changelog coming soon.
 1.0 | Initial Release
 
 ## Coming Soon:
 
-Menu system, basically almost an entire rewrite, stay tuned.
+Nothing! [Suggest something](http://github.com/Chewsterchew/Ti84-Programs/issues/new).
