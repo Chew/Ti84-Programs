@@ -1,4 +1,7 @@
 # Ti-84+ Programs & Games
+
+<a href="https://www.irccloud.com/invite?channel=%23ChewTi84&amp;hostname=irc.esper.net&amp;port=6697&amp;ssl=1" target="_blank"><img src="https://img.shields.io/badge/IRC-%23ChewTi84-1e72ff.svg?style=flat"  height="20"></a>
+
 Programs (and maybe games) for your Ti-84+ Calculator
 
 **NOTE: These were all made on a Ti-84+CE so they may not work as well on older models.**
