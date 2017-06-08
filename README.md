@@ -8,7 +8,7 @@ Programs (and maybe games) for your Ti-84+ Calculator
 
 [Visit the Website](http://ti84.chew.pw)
 
-[Install a Program](http://ti84.chew.pw/installation)
+[Install a Program](http://ti84.chew.pw/install)
 
 **NOTE: These were all made on a Ti-84+CE so they may not work as well on older models.**
 
