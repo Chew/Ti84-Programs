@@ -1,17 +1,16 @@
-# Ti-84+ Programs & Games
+## Welcome to Ti84 Programs
 
-<a href="https://www.irccloud.com/invite?channel=%23ChewTi84&amp;hostname=irc.esper.net&amp;port=6697&amp;ssl=1" target="_blank"><img src="https://img.shields.io/badge/IRC-%23ChewTi84-1e72ff.svg?style=flat"  height="20"></a>
+Here, you'll find a wide assortment of games and useful utilities for your calculator!<br/>
+Here are all of my programs listed below, click on the program name to see more info!
 
-Programs (and maybe games) for your Ti-84+ Calculator
+[How to install the programs](install)
 
-## NOTE: I'm slowly moving everyting to the website. Please use the website for the install guides, the programs will eventually make their way there.
-
-[Visit the Website](http://ti84.chew.pw)
-
-[Install a Program](http://ti84.chew.pw/install)
-
-**NOTE: These were all made on a Ti-84+CE so they may not work as well on older models.**
-
-You can now view the Ti-84 Programs on the beautiful new website! Check the website by clicking [here](http://ti84.chew.pw).
-
-
+Name | Short Description
+------|------
+[8ball](programs/8ball) | An 8ball for your calculator! 		
+[BossBattle](programs/bossbattle) | A proof-of-concept where you can fight a "boss" and set its difficulty!		
+[Guess the Number](programs/guessthenumber/) | Self-explanatory, generates a number 0-9 and you, *ahem*, guess the number.		
+[Lucky Cubes](programs/LuckyCubes) | *Proof of Concept* A fun game where you open cubes and can collect coins from mercenaries.
+[Math Utilities](programs/mathutilities) | Find math formulas, easy and simple.
+[Set FIX](programs/setfix) | A lazy way to set the "Fix" of calculator. Don't know what Fix is? Oh.		
+[DayOfWeek](programs/dayofweek) | Using the `dayofwk(` function, it checks to see what day of the week a specified day is.

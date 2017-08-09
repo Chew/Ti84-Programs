@@ -1,8 +1,11 @@
-# 8ball
+[Back](javascript:history.back())
+
+# 8-Ball
 
 Current Version: b 0.2
 
-[Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/raw/master/8ball/EBALL.8xp)
+[Download Latest Version](EBALL.8xp)<br/>
+[Source Code](https://github.com/Chewsterchew/Ti84-Programs/blob/master/programs/8ball/source-code.txt)
 
 ## How to Play
 

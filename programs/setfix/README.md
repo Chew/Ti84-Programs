@@ -1,8 +1,10 @@
+[Back](javascript:history.back())
+
 # Set Fix
 
 Current Version: 1.0
 
-[Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/blob/master/set-FIX/SETFIX.8xp?raw=true)
+[Download Latest Version](SETFIX.8xp)
 
 ## How to Run
 

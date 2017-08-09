@@ -1,8 +1,10 @@
+[Back](javascript:history.back())
+
 # Math Utilities
 
 Current Version: 1.0
 
-[Download Latest Version](https://github.com/Chewsterchew/Ti84-Programs/raw/master/math-utilities/MATHUTIL.8xp)
+[Download Latest Version](MATHUTIL.8xp)
 
 ## Description:
 
