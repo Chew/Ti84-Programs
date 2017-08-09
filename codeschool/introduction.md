@@ -25,4 +25,4 @@ Lesson | Name
 [Lesson 9](http://ti84.chew.pw/codeschool/lesson/9) | Menu(s and more advanced user interfaces.
 [Lesson 10](http://ti84.chew.pw/codeschool/lesson/10) | Complex Interfaces
 
-If you ever quote my work, PLEASE be sure to credit me! I worked on this all by myself, from personal experience, so if you steal I would highly doubt that you had the exact same expierences as I have.
+If you ever quote my work, PLEASE be sure to credit me! I worked on this all by myself, from personal experience, so if you steal I would highly doubt that you had the exact same experiences as I have had.
