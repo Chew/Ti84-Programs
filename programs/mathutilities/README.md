@@ -30,6 +30,7 @@ E | Number storage.
 List MDPT | (Created on first startup) Stores midpoint.
 
 ## Updates
+
 Version | Short Description
 --------|----------
 1.0 | Initial Release

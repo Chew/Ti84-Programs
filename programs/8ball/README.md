@@ -23,6 +23,7 @@ A | Used for Input.
 B | Used to store random number.
 
 ## Updates
+
 Version | Short Description
 --------|----------
 b 0.2 | Prettied it up a bit.
