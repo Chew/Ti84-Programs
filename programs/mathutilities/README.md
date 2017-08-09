@@ -2,9 +2,10 @@
 
 # Math Utilities
 
-Current Version: 1.0
+Current Version: 1.1
 
-[Download Latest Version](MATHUTIL.8xp)
+[Download Latest Version](MATHUTIL.8xp)<br/>
+[Source Code](https://github.com/Chewsterchew/Ti84-Programs/blob/master/programs/mathutilities/source-code.txt)
 
 ## Description:
 
@@ -27,12 +28,15 @@ B | Number storage.
 C | Number storage.
 D | Number storage.
 E | Number storage.
+S | Number storage.
+T | Number storage.
 List MDPT | (Created on first startup) Stores midpoint.
 
 ## Updates
 
 Version | Short Description
 --------|----------
+1.1 | Added Point Slope Form function.
 1.0 | Initial Release
 
 ## Coming Soon:

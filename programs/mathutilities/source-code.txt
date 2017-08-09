@@ -1,11 +1,11 @@
-Menu("SELECT PROGRAM","Find Slope",A,"Distance",B,"Find Midpoint",C,"Quit",Q
+Menu("SELECT PROGRAM","Find Slope",A,"Distance",B,"Find Midpoint",C,"Point Slope Form",D,"Quit",Q
 
 Lbl A
 Input "X1 > ",A
 Input "Y1 > ",B
 Input "X2 > ",D
 Input "Y2 > ",E
-(E-B)/(D-A)?C
+(E-B)/(D-A)→C
 Disp "SLOPE IS:",C
 Goto Q
 
@@ -14,13 +14,13 @@ Input "X1 > ",A
 Input "Y1 > ",B
 Input "X2 > ",C
 Input "Y2 > ",D
-(C-A)�+(D-B)�?E
-v(E)?G
-round(G,0)?F
+(C-A)²+(D-B)²→E
+√(E)→G
+round(G,0)→F
 If G=F
 Disp G
-If G?F
-Disp "","v(",E
+If G≠F
+Disp "","√(",E
 Goto Q
 
 Lbl C
@@ -28,9 +28,29 @@ Input "X1 > ",A
 Input "Y1 > ",D
 Input "X2 > ",B
 Input "Y2 > ",E
-(A+B)/2??MDPT(1)
-(D+E)/2??MDPT(2)
-Disp "MIDPOINT:",?MDPT
+(A+B)/2→⌊MDPT(1)
+(D+E)/2→⌊MDPT(2)
+Disp "MIDPOINT:",⌊MDPT
+Goto Q
+
+Lbl D
+ClrHome
+Input "Slope > ",S
+Input "X-Value > ",A
+Input "Y-Value > ",B
+S*­(A)→C
+B+C→E
+0→R
+0→V
+Repeat S=T
+V+1→V
+remainder(S,10^V)→T
+End
+Disp ""
+Output(4,1,"Y="
+Output(4,3,S
+Output(4,3+V,"X+"
+Output(4,5+V,E
 Goto Q
 
 Lbl Q
