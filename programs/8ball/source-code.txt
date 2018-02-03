@@ -1,25 +1,15 @@
-Disp "MAGIC 8BALL
-Disp "ASK YOUR QUESTION
-Disp "THEN PRESS ENTER
-Pause 
-round(rand*3,0)→B
-If B=1
-Then
-Disp "YES
+Disp "Magic 8-Ball!
+Disp "Ask Your Question
+Disp "Then Press Any Key
+Repeat K≠0
+getKey→K
 End
-If B=2
-Then
-Disp "NO
-End
-If B=3
-Then
-Disp "MAYBE
-End
+Disp "","The 8-Ball Says:"
+Wait .5
+randInt(0,3)→B
 If B=0
-Then
-Disp "ASK LATER
-End
-If B=4
-Then
-Disp "IDK
-End
+Disp "ASK AGAIN LATER
+If B=1
+Disp "YES
+If B=2
+Disp "NO
