@@ -1,11 +1,11 @@
-[Back](javascript:history.back())
+[Home](http://ti84.chew.pw)
 
 ## How to install the programs
 
 You can either download the .8xp file and install it directly to your calculator, or you may simply copy and paste the source code into the text editor box. Both require the Ti-Connect for your calculator, but for the following examples are used on the Ti-Connect CE.
 
-[Download Method](http://ti84.chew.pw/install/#downloading-method)<br/>
-[Copy-Paste Method](http://ti84.chew.pw/install/#copy--pasting-method)
+[Download Method](#downloading-method)<br/>
+[Copy-Paste Method](#copy--pasting-method)
 
 ### Downloading Method
 
