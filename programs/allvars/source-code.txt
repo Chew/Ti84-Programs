@@ -1,0 +1,143 @@
+Menu("Variable Lister","List",A,"Stats",B,"=0",C
+Lbl C
+"Vars: "→Str1
+If A=0
+Str1+"A"→Str1
+If B=0sour
+Str1+"B"→Str1
+If C=0
+Str1+"C"→Str1
+If D=0
+Str1+"D"→Str1
+If E=0
+Str1+"E"→Str1
+If F=0
+Str1+"F"→Str1
+If G=0
+Str1+"G"→Str1
+If H=0
+Str1+"H"→Str1
+If I=0
+Str1+"I"→Str1
+If J=0
+Str1+"J"→Str1
+If K=0
+Str1+"K"→Str1
+If L=0
+Str1+"L"→Str1
+If M=0
+Str1+"M"→Str1
+If N=0
+Str1+"N"→Str1
+If O=0
+Str1+"O"→Str1
+If P=0
+Str1+"P"→Str1
+If Q=0
+Str1+"Q"→Str1
+If R=0
+Str1+"R"→Str1
+If S=0
+Str1+"S"→Str1
+If T=0
+Str1+"T"→Str1
+If U=0
+Str1+"U"→Str1
+If V=0
+Str1+"V"→Str1
+If W=0
+Str1+"W"→Str1
+If X=0
+Str1+"X"→Str1
+If Y=0
+Str1+"Y"→Str1
+If Z=0
+Str1+"Z"→Str1
+ClrHome
+Output(1,1,"Vars that = 0"
+If Str1="Vars: "
+Then
+Output(2,1,"No vars"
+Else
+Output(2,1,Str1
+End
+Pause
+Stop
+
+Lbl B
+ClrHome
+A+B+C+D+E+F+G+H+I+J+K+L+M+N+O+P+Q+R+S+T+U+V+W+X+Y+Z+θ→⌊VARLS(1)
+⌊VARLS(1)/27→⌊VARLS(2)
+ABCDEFGHIJKLMNOPQRSTUVWXYZθ→⌊VARLS(3)
+Disp ⌊VARLS(1),⌊VARLS(2),⌊VARLS(3)
+Output(1,1,"Sum:
+Output(2,1,"Average:
+Output(3,1,"Multiplied:
+Pause
+Stop
+Lbl A
+ClrHome
+Output(1,1,"A =
+Output(1,5,A
+Output(2,1,"B =
+Output(2,5,B
+Output(3,1,"C =
+Output(3,5,C
+Output(4,1,"D =
+Output(4,5,D
+Output(5,1,"E =
+Output(5,5,E
+Output(6,1,"F =
+Output(6,5,F
+Output(7,1,"G =
+Output(7,5,G
+Output(8,1,"H =
+Output(8,5,H
+Output(9,1,"I =
+Output(9,5,I
+Output(10,1,"Press Enter to Continue
+Pause
+ClrHome
+Output(1,1,"J = "
+Output(1,5,J
+Output(2,1,"K = "
+Output(2,5,K
+Output(3,1,"L = "
+Output(3,5,L
+Output(4,1,"M = "
+Output(4,5,M
+Output(5,1,"N = "
+Output(5,5,N
+Output(6,1,"O = "
+Output(6,5,O
+Output(7,1,"P = "
+Output(7,5,P
+Output(8,1,"Q = "
+Output(8,5,Q
+Output(9,1,"R = "
+Output(9,5,R
+Output(10,1,"Press Enter to Continue
+Pause
+ClrHome
+Output(1,1,"S = "
+Output(1,5,S
+Output(2,1,"T = "
+Output(2,5,T
+Output(3,1,"U = "
+Output(3,5,U
+Output(4,1,"V = "
+Output(4,5,V
+Output(5,1,"W = "
+Output(5,5,W
+Output(6,1,"X = "
+Output(6,5,X
+Output(7,1,"Y = "
+Output(7,5,Y
+Output(8,1,"Z = "
+Output(8,5,Z
+Output(9,1,"θ = "
+Output(9,5,θ
+Output(10,1,"Press Enter to Finish
+Pause
+ClrHome
+Stop
