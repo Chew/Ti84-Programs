@@ -38,9 +38,11 @@ End
 End
 End
 ClrHome
+0→E
 If C=29
 Then
 28→C
+1→E
 D+1→D
 End
 If D=8
@@ -51,8 +53,11 @@ Output(1,8,A
 Output(2,1,"MONTH >
 Output(2,9,B
 Output(3,1,"DAY >
+If E=0
 Output(3,7,C
-Output(4,1,"THAT IS A 
+If E=1
+Output(3,7,C+1
+Output(4,1,"THAT IS A
 If D=7
 Output(4,11,"SATURDAY
 If D=6
