@@ -1,6 +1,6 @@
 [Home](http://ti84.chew.pw)
 
-# Boss Battle
+# AllVars
 
 [Download Latest Version](ALLVARS.8xp)<br>
 [Source Code](https://github.com/Chewsterchew/Ti84-Programs/blob/master/programs/allvars/source-code.txt)
