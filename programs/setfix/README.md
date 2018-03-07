@@ -1,10 +1,11 @@
-[Back](javascript:history.back())
+[Home](http://ti84.chew.pw)
 
 # Set Fix
 
 Current Version: 1.0
 
-[Download Latest Version](SETFIX.8xp)
+[Download Latest Version](SETFIX.8xp)<br/>
+[Source Code](https://github.com/Chewsterchew/Ti84-Programs/blob/master/programs/setfix/source-code.txt)
 
 ## How to Run
 
@@ -15,8 +16,8 @@ Current Version: 1.0
 ## Variables that will be Used
 
 Variable | Use
--------|------
-A | Used to store Fix Response
+-------- | --------------------------
+A        | Used to store Fix Response
 
 ## Coming Soon:
 
