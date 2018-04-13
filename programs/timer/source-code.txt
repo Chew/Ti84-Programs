@@ -1,0 +1,165 @@
+­1→A
+Repeat A≥0
+ClrHome
+
+Output(1,1,"Set Timer
+Output(2,1,"< and > switches unit
+Output(3,1,"^ and v sets amount
+0→D
+0→H
+0→M
+0→S
+Output(8,3,"SECS  MINS  HOUR  DAYS
+
+4→B
+Lbl C1
+Output(7,B,"vv"
+Output(9,B,"^^"
+Output(6,4,S
+If length(eval(S))=1
+Output(6,4,"0"+eval(S)
+Output(6,10,M
+If length(eval(M))=1
+Output(6,10,"0"+eval(M)
+Output(6,16,H
+If length(eval(H))=1
+Output(6,16,"0"+eval(H)
+Output(6,22,D
+If length(eval(D))=1
+Output(6,22,"0"+eval(D)
+Repeat K=26 or K=24 or K=105 or K=25 or K=34
+getKey→K
+End
+If K=105
+Goto H
+If K=25
+Then
+If B=4
+S+1→S
+If S=60
+Then
+S-60→S
+M+1→M
+End
+If B=10
+M+1→M
+If M=60
+Then
+M-60→M
+H+1→H
+End
+If B=16
+H+1→H
+If H=24
+Then
+D+1→D
+H-24→H
+End
+If B=22 and D≤24
+D+1→D
+Goto C1
+End
+If K=34
+Then
+If B=4 and S>0
+S-1→S
+If B=10 and M>0
+M-1→M
+If B=16 and H>0
+H-1→H
+If B=22 and D>0
+D-1→D
+Goto C1
+End
+If B=4
+Then
+If K=26
+Then
+10→B
+Else
+22→B
+End
+Output(7,4,"  "
+Output(9,4,"  "
+Goto C1
+End
+If B=10
+Then
+If K=26
+Then
+16→B
+Else
+4→B
+End
+Output(7,10,"  "
+Output(9,10,"  "
+Goto C1
+End
+If B=16
+Then
+If K=26
+Then
+22→B
+Else
+10→B
+End
+Output(7,16,"  "
+Output(9,16,"  "
+Goto C1
+End
+If B=22
+Then
+If K=24
+Then
+16→B
+Else
+4→B
+End
+Output(7,22,"  "
+Output(9,22,"  "
+Goto C1
+End
+Lbl H
+(D*24*60*60)+(H*60*60)+(M*60)+S→A
+If A=0
+1→A
+ClrHome
+End
+A→B
+If A≤0
+1→A
+Output(1,1,"TIME REMAINING
+Output(5,1,"SECS
+Output(5,7,"MINS
+Output(5,13,"HOUR
+Output(5,19,"DAYS
+Output(7,1,"Percent Done"
+Output(8,1,"Percent ToGo"
+Repeat A=0
+startTmr→T
+int(A/60/60/24)→D
+int(A/60/60)-(D*24)→H
+int(A/60)-(H*60)-(D*24*60)→M
+A-(D*24*60*60)-(H*60*60)-(M*60)→S
+Output(4,19,D
+Output(4,13,H
+Output(4,7,M
+Output(4,1,S
+Output(8,14,round(A/B*100,2)
+Output(7,14,round(((B-A)/B)*100,2)
+Repeat startTmr-1=T
+End
+A-1→A
+If D=10 and D≠0
+Output(4,20," "
+If H=10 and H≠0
+Output(4,14," "
+If M=10 and M≠0
+Output(4,8," "
+If S=10 and S≠0
+Output(4,2," "
+Output(7,14,"     "
+Output(8,14,"     "
+End
+ClrHome
+Disp "TIMER DONE

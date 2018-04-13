@@ -17,3 +17,4 @@ Here are all of my programs listed below, click on the program name to see more 
 | [Math Utilities](programs/mathutilities)     | Find math formulas, easy and simple.                                                     |
 | [Set FIX](programs/setfix)                   | A lazy way to set the "Fix" of calculator. Don't know what Fix is? Oh.                   |
 | [DayOfWeek](programs/dayofweek)              | Using the `dayofwk(` function, it checks to see what day of the week a specified day is. |
+| [Timer](programs/timer)                      | A timer, on your CALCULATOR??                                                            |
