@@ -21,13 +21,15 @@ Current Version: 1.0
 
 ## Variables Used
 
-| Variable | Use                                                |
-| -------- | -------------------------------------------------- |
-| B        | Used to store Boss Health.                         |
-| E        | Used to set max damage by.                         |
-| H        | Used to store Player Health                        |
-| N        | Used to calculate output location (Boss Health).   |
-| O        | Used to calculate output location (Player Health). |
+| Variable | Use                                  |
+| -------- | ------------------------------------ |
+| A        | Used to store total seconds of timer |
+| B        | Used to hold position on menu.       |
+| D        | Used to store total days left.       |
+| H        | Used to store total hours left       |
+| M        | Used to store total minutes left.    |
+| S        | Used to store total seconds left.    |
+| T        | Used to store unix time.             |
 
 ## Updates
 
@@ -37,4 +39,4 @@ Current Version: 1.0
 
 ## Coming Soon
 
-- Don't let percent% complete flicker.
+-   Don't let percent% complete flicker.
