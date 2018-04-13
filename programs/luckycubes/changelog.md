@@ -9,15 +9,15 @@
   - Toggle the 100 cube open limit (10000 is hard limit)
   - Toggle the "Left" when opening, for mystery, I guess.
 - Cost to buy cubes now shows how many coins you have.
-- Successful cube purchase shows your coin and cube coin.
-- Insufficient funds shows how much coins you still need.
+- Successful cube purchase shows your coin and cube count.
+- Insufficient funds shows how many coins you still need.
 - Re-worked how you get coins from mercenaries.
-  - The more mercenaries you have, the shorter amount of times it takes to get a coin from a mercenary. (min 10 at ~18484 mercs)
-- Collecting coins now shows your total coins.
+  - The more mercenaries you have, the shorter amount of times it takes to get a coin from a mercenary. (min 1 every 10 seconds at ~18484 mercs)
+- Collecting coins from mercenaries now shows your total coins.
 - Purchasing a mercenary now shows how many coins and mercenaries you have.
-- Purchasing a mercenary has a "Buy Again" button, so you're able to essentially spam the enter button to buy mercenaries.
+- Purchasing a mercenary has a "Buy Again" button, so you're able to essentially spam the enter button to buy a ton of mercenaries.
 - Opening cube reworked a bit
-  - You can now get between 5 and 60 coins from a coin from a normal cube and 45-150 coins from a lucky one.
+  - You can now get between 5 and 60 coins from a normal cube and 45-150 coins from a lucky one.
 
 ## Release 2.0
 
