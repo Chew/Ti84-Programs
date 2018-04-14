@@ -1,47 +1,84 @@
 100→B
 100→H
-0→D
+{100,100}→⌊BBAT
+24→O
+24→P
 ClrHome
-Output(2,1,"        BOSS BATTLE
-Output(9,1,"   Press Enter to Begin"
-Pause 
-Menu("    SET BOSS DIFFICULTY    ","EASY",A,"NORMAL",B,"HARD",C
+Output(2,9,"BOSS BATTLE
+Output(9,3,"Press Any Key to Begin"
+Repeat K≠0
+getKey→K
+End
+ClrHome
+Menu("    SET BOSS DIFFICULTY    ","Easy",A,"Normal",B,"Hard",C
 Lbl A
-D+1→D
-Lbl B
-D+10→D
-Lbl C
-D+100→D
-If D=111
 1→E
-If D=110
+Goto D
+Lbl B
 5→E
-If D=100
+Goto D
+Lbl C
 10→E
+Lbl D
 ClrHome
 Output(1,1,"BOSS HEALTH:"
 Output(2,1,"YOUR HEALTH:"
-Repeat H≤0 or B≤0
-Output(1,24,"   "
-Output(2,24,"   "
+7→F
+Lbl F
+If H≤0 or B≤0
+Goto Q
+O→⌊BBAT(3)
+P→⌊BBAT(4)
 If H≥1
 26→O
 If H≥10
 25→O
-If H≥100
+If H=100
 24→O
-Output(2,O,H
+If O≠⌊BBAT(3)
+Output(2,⌊BBAT(3)," "
 If B≥1
 26→P
 If B≥10
 25→P
-If B≥100
+If B=100
 24→P
+If P≠⌊BBAT(4)
+Output(1,⌊BBAT(4)," "
+B→⌊BBAT(1)
+H→⌊BBAT(2)
+Output(2,O,H
 Output(1,P,B
-Pause 
-H-randInt(0,E)→H
-B-randInt(0,10)→B
+Output(7,2,"Attack
+Output(8,2,"Skip a Turn
+Lbl P
+Output(F,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
 End
+If K=25 or K=34
+Then
+If F=7
+Then
+8→F
+Output(7,1," "
+Goto P
+Else
+7→F
+Output(8,1," "
+Goto P
+End
+End
+H-randInt(0,E)→H
+Lbl D
+If F=7
+Then
+B-randInt(1,10)→B
+Goto F
+Else
+Goto F
+End
+Lbl Q
 ClrHome
 Disp "",""
 If H≤0
