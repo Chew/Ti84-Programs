@@ -1,4 +1,4 @@
-[Back](javascript:history.back())
+[Home](http://ti84.chew.pw)
 
 # Guess The Number
 
@@ -9,7 +9,7 @@
 
 Guess the number is a game where you guess the number the program decides.
 
-Current Version: 2.0
+Current Version: 2.1
 
 ## How to Play
 
@@ -23,19 +23,20 @@ Current Version: 2.0
 
 ## Variables that will be Used
 
-Variable | Use
--------|------
-A | Used to check store Number Input.
-B | Used to store random number.
-D | Used to select items on a menu.
-K | Used to store key data.
+| Variable | Use                               |
+| -------- | --------------------------------- |
+| A        | Used to check store Number Input. |
+| B        | Used to store random number.      |
+| D        | Used to select items on a menu.   |
+| K        | Used to store key data.           |
 
 ## Changelog
 
-Version | Description
-----|----
-2.0 | Entire revamp, uses getKey now.
-1.0 | Initial Release
+| Version | Description                     |
+| ------- | ------------------------------- |
+| 2.1     | New stats!                      |
+| 2.0     | Entire revamp, uses getKey now. |
+| 1.0     | Initial Release                 |
 
 ## Coming Soon:
 

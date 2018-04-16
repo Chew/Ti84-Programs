@@ -1,36 +1,99 @@
+Lbl M
 10→A
 ClrHome
-Output(1,4,"GUESS THE NUMBER
-Output(2,1,"PICK A NUM 0-9
-Output(3,1,"THEN PRESS ENTER"
-Output(4,1,"USE ARROW KEYS TO CHOOSE
-Output(5,1,"THEN PRESS ENTER"
-7→D
-Output(7,2,"Begin
-Output(8,2,"Quit
-Goto T
-Lbl T
-Output(D,1,">"
+Output(1,6,"GUESS THE NUMBER
+Output(2,1,"Pick a number 0-9
+Output(3,1,"then press Enter"
+Output(4,1,"Use Arrow Keys to Select
+Output(5,1,"Press Enter to Choose
+0→⌊GUSNU(1)
+7→M
+Output(7,2,"Play
+Output(8,2,"Stats
+Output(9,2,"Quit
+Lbl C1
+Output(M,1,">"
+Repeat K=34 or K=25 or K=105
+getKey→K
+End
+If K=34
+Then
+If M=9
+Then
+7→M
+Output(9,1," "
+Else
+Output(M,1," "
+M+1→M
+End
+Goto C1
+End
+If K=25
+Then
+If M=7
+Then
+9→M
+Output(7,1," "
+Else
+Output(M,1," "
+M-1→M
+End
+Goto C1
+End
+If M=7
+Goto C
+If M=8
+Goto S
+If M=9
+Goto Q
+Lbl S
+If dim(⌊GUSNU)=1
+Then
+ClrHome
+Output(1,1,"Stats Requires a Profile
+Output(2,1,"Would you like to Make
+Output(3,1,"a Profile now?
+7→M
+Output(7,2,"Yes
+Output(8,2,"No
+Lbl C2
+Output(M,1,">"
 Repeat K=34 or K=25 or K=105
 getKey→K
 End
 If K=25 or K=34
 Then
-If D=7
+If M=7
 Then
-8→D
+8→M
 Output(7,1," "
 Else
-7→D
+7→M
 Output(8,1," "
 End
-Goto T
-Else
-If D=7
-Goto C
-If D=8
-Goto Q
+Goto C2
 End
+If M=8
+Goto C
+If M=7
+{0,0,0,0,0,0}→⌊GUSNU
+End
+⌊GUSNU(2)+⌊GUSNU(3)→⌊GUSNU(4)
+If ⌊GUSNU(4)>0
+Then
+round(⌊GUSNU(2)/⌊GUSNU(4)*100,2)→⌊GUSNU(5)
+Else
+0→⌊GUSNU(5)
+End
+ClrHome
+Disp "",⌊GUSNU(2),⌊GUSNU(3),⌊GUSNU(4),⌊GUSNU(5)
+Output(1,6,"GUESSES
+Output(2,1,"Correct:
+Output(3,1,"Incorrect:
+Output(4,1,"Total:
+Output(5,1,"Per. Correct:
+Pause
+Goto M
 Lbl C
 10→A
 ClrHome
@@ -81,14 +144,20 @@ randInt(0,9)→B
 Output(7,13,B)
 Output(1,1,"                         "
 If B=A
+Then
 Output(1,1,"YOU GUESSED IT"
+If dim(⌊GUSNU)≠1
+⌊GUSNU(2)+1→⌊GUSNU(2)
+End
 If B≠A
+Then
 Output(1,1,"YOU GUESSED WRONG :("
-
+If dim(⌊GUSNU)≠1
+⌊GUSNU(3)+1→⌊GUSNU(3)
+End
 9→D
 Output(9,2,"Again
 Output(10,2,"Quit
-Output(D,1,">"
 Lbl U
 Output(D,1,">"
 Repeat K=34 or K=25 or K=105
@@ -109,12 +178,11 @@ End
 If K=105 and D=9
 Goto C
 Output(9,1,"      "
-Output(10,1,"PRESS ANY KEY TO FINISH"
+Output(10,1,"PRESS ANY KEY TO FINISH
 0→K
 Repeat K≠0
 getKey→K
 End
-Goto Q
 Lbl Q
 ClrHome
 Stop
