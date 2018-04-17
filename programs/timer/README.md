@@ -1,6 +1,6 @@
 [Home](http://ti84.chew.pw)
 
-# Boss Battle
+# Timer
 
 [Download Latest Version](TIMER.8xp)<br/>
 [Source Code](https://github.com/Chewsterchew/Ti84-Programs/blob/master/programs/timer/source-code.txt)
@@ -11,13 +11,13 @@ Timer allows you to set a timer via a very neat GUI, and counts down similarly.
 
 Current Version: 1.0
 
-## How to Play
+## How to Run
 
 1) Run the Program `prgmTIMER`
 
 2) Set timer using arrows.
 
-3) Press enter to set timer.
+3) Press enter to start timer.
 
 ## Variables Used
 
