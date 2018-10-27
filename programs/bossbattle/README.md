@@ -13,7 +13,7 @@ Current Version: 1.1
 
 ## How to Play
 
-1) Run the Program `pgrmBOSSBATT`
+1) Run the Program `pgrmBOSSBATT`.
 
 2) Select difficulty using the menu.
 
@@ -31,7 +31,7 @@ Current Version: 1.1
 | -------- | -------------------------------------------------- |
 | B        | Used to store Boss Health.                         |
 | E        | Used to set max damage by.                         |
-| H        | Used to store Player Health                        |
+| H        | Used to store Player Health.                       |
 | N        | Used to calculate output location (Boss Health).   |
 | O        | Used to calculate output location (Player Health). |
 
@@ -42,8 +42,8 @@ Current Version: 1.1
 | 1.1     | New Skip a Turn option!                                                        |
 | 1.0     | Rewrote everything (not because I accidentally deleted it) and prettied it up. |
 | b 1.1   | Rewrote some minor things, new difficulty.                                     |
-| b 1.0   | New Difficulty                                                                 |
-| b 0.1   | Initial Release                                                                |
+| b 1.0   | New Difficulty.                                                                |
+| b 0.1   | Initial Release.                                                               |
 
 ## Coming Soon:
 
