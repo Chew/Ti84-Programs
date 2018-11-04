@@ -1,4 +1,6 @@
-Menu("SELECT PROGRAM","Find Slope",A,"Distance",B,"Find Midpoint",C,"Point Slope Form",D,"Quit",Q
+Lbl M
+ClrHome
+Menu("       Which Method?      ","Find Slope",A,"Find Distance",B,"Find Midpoint",C,"Point Slope Form",D,"Program Info",I,"Quit",Q
 
 Lbl A
 Input "X1 > ",A
@@ -6,7 +8,7 @@ Input "Y1 > ",B
 Input "X2 > ",D
 Input "Y2 > ",E
 (E-B)/(D-A)→C
-Disp "SLOPE IS:",C
+Disp "","Slope is: "+eval(C)
 Goto Q
 
 Lbl B
@@ -17,10 +19,14 @@ Input "Y2 > ",D
 (C-A)²+(D-B)²→E
 √(E)→G
 round(G,0)→F
+"Distance: "→Str6
 If G=F
-Disp G
-If G≠F
-Disp "","√(",E
+Then
+Str6+eval(G)→Str6
+Else
+Str6+"√("+eval(E)+")"→Str6
+End
+Disp "",Str6
 Goto Q
 
 Lbl C
@@ -30,7 +36,7 @@ Input "X2 > ",B
 Input "Y2 > ",E
 (A+B)/2→⌊MDPT(1)
 (D+E)/2→⌊MDPT(2)
-Disp "MIDPOINT:",⌊MDPT
+Disp "","Midpoint: ("+eval(⌊MDPT(1))+","+eval(⌊MDPT(2))+")"
 Goto Q
 
 Lbl D
@@ -47,11 +53,18 @@ V+1→V
 remainder(S,10^V)→T
 End
 Disp ""
-Output(4,1,"Y="
-Output(4,3,S
-Output(4,3+V,"X+"
-Output(4,5+V,E
+Disp "y="+eval(S)+"x+"+eval(E)
 Goto Q
 
+Lbl I
+Output(1,1,"Math Utilities"
+Output(2,1,"Made by: Chewsterchew"
+Output(3,1,"http://ti84.chew.pw
+Output(4,1,"Version: 1.2
+Output(10,1,"Press Any Key to Continue"
+Repeat K≠0
+getKey→K
+End
+Goto M
+
 Lbl Q
-Stop
