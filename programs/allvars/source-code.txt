@@ -3,7 +3,7 @@ Lbl C
 "Vars: "→Str1
 If A=0
 Str1+"A"→Str1
-If B=0sour
+If B=0
 Str1+"B"→Str1
 If C=0
 Str1+"C"→Str1
@@ -53,6 +53,8 @@ If Y=0
 Str1+"Y"→Str1
 If Z=0
 Str1+"Z"→Str1
+If θ=0
+Str1+"θ"→Str1
 ClrHome
 Output(1,1,"Vars that = 0"
 If Str1="Vars: "

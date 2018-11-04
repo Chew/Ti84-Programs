@@ -9,7 +9,7 @@
 
 AllVars is a simple way to list all of your variables, see stats about them, such as how much they are added, multiplied, and the average, and figure out which variables are equal to 0.
 
-Current Version: 1.0
+Current Version: 1.1
 
 ## How to Play
 
@@ -21,16 +21,17 @@ Current Version: 1.0
 
 ## Variables Used
 
-Variable   | Use
----------- | -----------------------------------------------
-Str1       | Used to store what variables equal 0.
-List VARLS | Created on start-up and stores stuff for stats.
+| Variable   | Use                                             |
+| ---------- | ----------------------------------------------- |
+| Str1       | Used to store what variables equal 0.           |
+| List VARLS | Created on start-up and stores stuff for stats. |
 
 ## Updates
 
-Version | Short Description
-------- | -----------------
-1.0     | Initial Release
+| Version | Short Description                    |
+| ------- | ------------------------------------ |
+| 1.1     | Now treats theta as a variable in =0 |
+| 1.0     | Initial Release                      |
 
 ## Coming Soon:
 
