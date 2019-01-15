@@ -1,0 +1,7 @@
+ClrHome
+For(B,1,10,2)
+For(A,1,26)
+Output(B,A,sub("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-*/^=><(){}[].,:",randInt(1,79),1)
+End
+End
+Pause 
