@@ -1,0 +1,35 @@
+Lbl 1
+Input "D ",D
+If D=0:Disp "","Error: D≠0",""
+If D=0:Goto 1
+1→K
+ClrHome
+Disp "I:    J:","Status","0   √(0","","",""
+For(I,1,20,1)
+For(J,2,25,1)
+If not(fPart(D/J²)):Then
+D/J²→D
+KJ→K
+ClrHome
+Disp "I:    J:","Status","","","",""
+Output(3,1,K
+Output(3,5,"√("
+Output(3,7,D
+End
+Output(1,3,I)
+Output(1,9,J)
+End
+End
+Output(5,1,"Answer: "
+If K=1:Then
+Output(6,1,"√("
+Output(6,3,D
+Else
+If D=1:Then
+Output(6,1,K
+Else
+Output(6,1,K
+Output(6,5,"√("
+Output(6,7,D
+End
+End
