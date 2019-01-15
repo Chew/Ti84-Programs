@@ -1,0 +1,22 @@
+ClrHome
+SetUpEditor ⌊PRM
+{0}→⌊PRM
+Input " ",N
+ClrHome
+For(M,1,√(N))
+N/M→A
+int(A)→B
+dim(⌊PRM)→C
+Output(10,1,M)
+If A=B:Then
+M→⌊PRM(C+1)
+N/M→⌊PRM(C+2)
+Disp M,N/M,""
+End
+End
+If dim(⌊PRM)≤3:Then
+Disp " is prime"
+DelVar ⌊PRM
+Else
+Disp "Look in ⌊PRM for factors"," is not prime"
+End
