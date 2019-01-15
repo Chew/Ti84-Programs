@@ -1,0 +1,73 @@
+Disp "WAIT"
+getTime→⌊T1
+DelVar ⌊T1DelVar ⌊T2DelVar ⌊T3DelVar ⌊T4
+SetUpEditor ⌊T1,⌊T2,⌊T3,⌊T4
+0→A:0→B:0→C:0→D:0→E:0→F:0→G:0→H:0→I:0→J:0→K:0→L:0→M:0→N:0→O:0→P:0→Q:0→R:0→S:0→T:0→U:0→V:0→W:0→X:0→Y:0→Z:0→θ
+getTime→⌊T1
+{0,0}→⌊T4
+LabelOff
+BorderColor 3
+BackgroundOff
+ClrDraw
+While 1
+If E≥144:0→D
+TextColor(BLACK
+Text(12,1,"-----------------------------"
+Repeat θ
+getKey→θ
+If θ=21:Then
+TextColor(YELLOW
+Text(150,0,"   ///[!] Timer paused, press 'ENTER'///   ")
+Line(263,0,263,13,MEDGRAY
+Repeat getKey
+getTime→⌊T1
+End
+O→S
+End
+If θ=31:Then
+TextColor(YELLOW
+Text(150,1,"Restarting timer..."
+End
+TextColor(RED
+getTime→⌊T2:0→O:0→P
+For(C,2,0,­1)
+O+((60^C)(⌊T2(3-C)-⌊T1(3-C)))→O
+End
+O+S→O
+Text(1,1,"T",O," L",(dim(⌊T4)/2)," D",O-Q," Q",Q,"     ")
+O-Q→P
+dim(⌊T4)-19→F
+If D=0:Then
+If dim(⌊T4)<20:1→F
+F→D:24→E
+End
+If E<164:For(Z,0,3)
+If D≤dim(⌊T4):Then
+TextColor(LTBLUE
+Text(E,1,"L",(D-1)/2," T",⌊T4(D)," D",⌊T4(D+1),"    "
+If E+12<164:12+E→E:2+D→D
+End
+End
+End
+O→⌊T4(dim(⌊T4)+1):P→⌊T4(dim(⌊T4)+1)
+If θ≠21 or θ≠31 or θ≠45:Then
+If θ=21:Then
+For(Z,1,dim(⌊T4)-2)
+⌊T4(Z)→⌊T3(Z)
+End
+⌊T3→⌊T4:{0}→⌊T3:0→D
+ClrDraw
+Else:O→Q
+End
+If θ=31:Then
+{0,0}→⌊T4:0→D:getTime→⌊T1
+ClrDraw
+End
+If θ=45:Then
+DelVar ADelVar BDelVar CDelVar DDelVar EDelVar FDelVar GDelVar HDelVar IDelVar JDelVar KDelVar LDelVar MDelVar NDelVar ODelVar PDelVar QDelVar RDelVar SDelVar TDelVar UDelVar VDelVar WDelVar XDelVar YDelVar ZDelVar θDelVar ⌊T1DelVar ⌊T2DelVar ⌊T3DelVar ⌊T4
+Output(1,1,""
+Stop
+End
+Else:O→Q
+End
+End
